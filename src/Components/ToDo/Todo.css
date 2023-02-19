@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+.inner-container input {
+  padding: 15px;
+  margin: 1em 0 1em 0;
+}
+.inner-container button {
+  width: 30%;
+  padding: 10px;
+  align-self: center;
+}
