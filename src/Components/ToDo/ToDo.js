@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Todo.css";
 
 const ToDo = () => {
   const [inputData, setInputData] = useState("");
@@ -23,9 +24,9 @@ const ToDo = () => {
         <div className="child-div">
           <figure>
             <img src="" alt="todo" />
-            <figcaption>Add your tasks here</figcaption>
+            <figcaption>Add your tasks here ✍️</figcaption>
           </figure>
-          <div className="">
+          <div className="task-adder">
             <input
               type="text"
               placeholder="Write text here"
@@ -34,7 +35,7 @@ const ToDo = () => {
                 setInputData(e.target.value);
               }}
             />
-            <button onClick={handelAdd}>+</button>
+            <button onClick={handelAdd}>Add Task</button>
           </div>
           <div className="show-items">
             <div className="each-item">
