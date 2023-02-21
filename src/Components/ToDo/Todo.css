@@ -4,28 +4,71 @@
   align-items: center;
   justify-content: center;
   background-color: yellow;
+  font-family: "Babylonica", cursive;
+  font-size: 4em;
+  color: white;
 }
 
 .task-adder {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 50vw;
+  border-radius: 15px;
+  font-family: "Babylonica", cursive;
+  background-color: rgba(240, 248, 255, 0.4);
+  margin-bottom: 5px;
 }
 
 .task-adder input {
-  margin: 2em 0;
-  padding: 2em 4em;
-  border-radius: 15px;
+  margin: 2em 10px 2em 0;
+  padding: 1em 4em;
+  border-radius: 10px;
   border: 0;
   border-bottom: 2px solid grey;
 }
 
 .task-adder button {
-  padding: 1em 4em;
-  border-radius: 5px;
+  border-radius: 50%;
+  font-size: 1em;
+  padding: 0 17px;
   border: 0;
-  border-bottom: 1px solid tomato;
-  background-color: aqua;
+  background-color: rgb(80, 90, 32, 0.5);
+}
+
+.main-div {
+  background-image: url("https://wallpapercave.com/wp/wp6977230.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.show-items {
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.4em;
+}
+
+.each-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(240, 248, 255, 0.4);
+  border-radius: 10px;
+  margin-bottom: 5px;
+  width: 50vw;
+}
+.item-inside {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-direction: row;
+  position: relative;
+}
+.item-inside button {
+  position: absolute;
+  right: 0;
+  font-size: 1.2em;
+  padding: 0 5px 0 5px;
+  background-color: tomato;
+  border: 0;
 }
