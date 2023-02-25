@@ -21,7 +21,10 @@ const ToDo = () => {
     <>
       <div className="main-div">
         <div className="child-div">
-          <h1>To-Do..</h1>
+          <div className="heading">
+            <h1>To-Do..</h1>
+          </div>
+
           <div className="task-adder">
             <input
               type="text"

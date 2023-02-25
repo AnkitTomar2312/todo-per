@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-color: yellow;
   font-family: "Babylonica", cursive;
   font-size: 4em;
@@ -71,4 +70,26 @@
   padding: 0 5px 0 5px;
   background-color: tomato;
   border: 0;
+}
+/* The animation code */
+@keyframes example {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+/* The element to apply the animation to */
+.heading {
+  width: auto;
+  height: 15vw;
+  padding-top: 0.5em;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
 }
